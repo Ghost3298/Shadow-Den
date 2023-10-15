@@ -2,37 +2,144 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust as needed */
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Button {
+  position: relative;
+  width: 150px; /* Adjust the width as needed */
+  height: 150px;
+  margin: 10px; /* Adjust the margin as needed */
+  border: 4px solid grey;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: rgba(255, 0, 0, 0.4) 5px 5px, rgba(255, 0, 0, 0.3) 10px 10px;
+}
+
+.Button:hover{
+  border: 4px solid red;
+}
+
+img {
+  height: 80px; /* Adjust the image height as needed */
+  width: auto; /* Adjust the image width as needed */
+  padding-top: 10px
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+
+.line {
+  display: flex;
+  align-items: center;
   color: white;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.line img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px; /* Add margin to separate image from text */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line h3 {
+  margin-bottom: 5px; /* Add margin to separate h4 from p */
+}
+
+.line p {
+  color: grey;
+}
+
+.line table{
+  margin-left: 10px;
+  text-align: left;
+}
+
+.back-button{
+  position: absolute;
+  top : 20px;
+  left: 20px;
+  height: 40px;
+  width: 40px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(255, 0, 0, 0.4) 2px 2px, rgba(255, 0, 0, 0.3) 5px 5px;
+  background-color: transparent;
+}
+
+.back-button:hover{
+  cursor: pointer;
+}
+
+.userinput{
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  color: grey;
+  border-bottom: 2px solid grey;
+  border-radius: 8px;
+}
+
+.userinput:focus{
+  outline: none;
+}
+
+.GO{
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+  box-shadow: rgba(255, 0, 0, 0.4) 2px 2px, rgba(255, 0, 0, 0.3) 5px 5px;
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.GO:active{
+  color:red;
+  border: 2px solid red;
+}
+
+.UserResult{
+  border: 2px solid grey;
+  width: 75%;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: rgba(246, 0, 0, 0.651) 0px 5px 15px;
+}
+
+.UserResult #usernameH{
+  font-size: 28px;
+  color :red;
+}
+
+.UserResult #statusP{
+  font-size: 12px;
+  color: grey;
+  position: relative;
+  top: -20px;
 }
